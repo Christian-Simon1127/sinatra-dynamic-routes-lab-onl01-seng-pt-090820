@@ -26,7 +26,7 @@ class App < Sinatra::Base
     params.each do |key, value|
       @say += value + " "
     end
-    "#{@say}."
+    "#{@say[0, -2]}."
   end
   
   get '/:operation/:number1/:number2' do
