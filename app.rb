@@ -22,12 +22,8 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
-    @say = ""
     @word1, @word2, @word3, @word4, @word5 = :word1, :word2, :word3, :word4, :word5
-    params.each do |word|
-      @say += word + " "
-    end 
-    "#{@say}"
+    "#{@word1} +  #{@word2} +  #{@word3} +  #{@word4} +  #{@word5}"
   end
   
   get '/:operation/:number1/:number2' do
