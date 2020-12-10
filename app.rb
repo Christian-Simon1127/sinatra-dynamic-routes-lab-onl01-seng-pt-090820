@@ -18,6 +18,7 @@ class App < Sinatra::Base
     @times.times do 
       @say += " " + params[:phrase]
     end
+    "#{@say}"
   end
   
   
