@@ -29,7 +29,7 @@ class App < Sinatra::Base
     "#{@say}"
   end
   
-  get '/' do
+  get '/:operation/:number1/:number2' do
     
   end
   
